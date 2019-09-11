@@ -1,8 +1,7 @@
 [
     {
-      "_id": "5d78b03ceb2f6571fd405872",
+      "_id": "1",
       "company": "RETROTEX",
-      "email": "howellgonzalez@retrotex.com",
       "phone": "+1 (881) 499-2321",
       "address": "892 Schenck Court, Blanford, Kentucky, 2977",
       "latitude": -51.458018,
@@ -10,9 +9,8 @@
       "cuisine": "Lebanese"
     },
     {
-      "_id": "5d78b03c8ff458083c99aaf8",
+      "_id": "2",
       "company": "MOREGANIC",
-      "email": "howellgonzalez@moreganic.com",
       "phone": "+1 (965) 404-3191",
       "address": "136 Dakota Place, Frierson, Oklahoma, 9627",
       "latitude": -7.736188,
@@ -20,9 +18,8 @@
       "cuisine": "Italian"
     },
     {
-      "_id": "5d78b03c77a4cae4a2118277",
+      "_id": "3",
       "company": "SIGNIDYNE",
-      "email": "howellgonzalez@signidyne.com",
       "phone": "+1 (878) 456-2355",
       "address": "845 Union Street, Zortman, North Carolina, 833",
       "latitude": -80.729605,
@@ -30,63 +27,12 @@
       "cuisine": "Indian"
     },
     {
-      "_id": "5d78b03c4435375aa72f5a70",
+      "_id": "4",
       "company": "QUORDATE",
-      "email": "howellgonzalez@quordate.com",
       "phone": "+1 (899) 588-2057",
       "address": "536 Onderdonk Avenue, Murillo, South Carolina, 7684",
       "latitude": 35.700138,
       "longitude": -15.470252,
-      "cuisine": "Lebanese"
-    },
-    {
-      "_id": "5d78b03c2e005e7926584cee",
-      "company": "ZENTILITY",
-      "email": "howellgonzalez@zentility.com",
-      "phone": "+1 (800) 501-3117",
-      "address": "156 Quentin Road, Yorklyn, Kansas, 6822",
-      "latitude": 73.400974,
-      "longitude": -136.226936,
-      "cuisine": "Indian"
-    },
-    {
-      "_id": "5d78b03ca8a06ea7b39f111d",
-      "company": "JETSILK",
-      "email": "howellgonzalez@jetsilk.com",
-      "phone": "+1 (982) 492-3089",
-      "address": "963 Holt Court, Ezel, Indiana, 1422",
-      "latitude": -8.454202,
-      "longitude": 158.980778,
-      "cuisine": "Lebanese"
-    },
-    {
-      "_id": "5d78b03cb24a5bb8b2860f54",
-      "company": "COMTEST",
-      "email": "howellgonzalez@comtest.com",
-      "phone": "+1 (931) 493-2452",
-      "address": "308 Dahl Court, Hickory, New Hampshire, 9492",
-      "latitude": -43.973486,
-      "longitude": 108.134329,
-      "cuisine": "Lebanese"
-    },
-    {
-      "_id": "5d78b03c861678186ee92778",
-      "company": "GEOFORMA",
-      "email": "howellgonzalez@geoforma.com",
-      "phone": "+1 (804) 476-2968",
-      "address": "522 Ovington Avenue, Wyoming, Missouri, 390",
-      "latitude": -5.612705,
-      "longitude": 81.443271,
-      "cuisine": "Indian"
-    },
-    {
-      "_id": "5d78b03c32a4b2d151694756",
-      "company": "GEEKY",
-      "email": "howellgonzalez@geeky.com",
-      "phone": "+1 (966) 536-3125",
-      "address": "648 Indiana Place, Allendale, Tennessee, 4527",
-      "latitude": -6.296849,
-      "longitude": 109.979273,
       "cuisine": "Lebanese"
     }
   ]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
+import { RestlistService } from '../restlist.service';
 
 @Component({
   selector: 'app-restlist',
@@ -7,16 +8,11 @@ import {Router, ActivatedRoute} from '@angular/router';
   styleUrls: ['./restlist.component.css']
 })
 export class RestlistComponent implements OnInit {
-  public restlist = [
-    { "name": "Prem Rest.",
-      "id" : 1
-  },{ "name": "Prithvi Rest.",
-      "id" : 2
-  }
-  ]
-  constructor(private route:ActivatedRoute, private router:Router) { }
+  public restlist = [];
+  constructor(private route:ActivatedRoute, private router:Router, private _restlist: RestlistService) { }
 
   ngOnInit() {
+    this.restlist = this._restlist.getrestlist();
   }
   selectingRest(rest){
     this.router.navigate([rest.id], {relativeTo: this.route});

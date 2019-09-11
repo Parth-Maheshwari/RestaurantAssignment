@@ -1,5 +1,14 @@
 <ul>
     <li (click)="selectingRest(rest)" *ngFor="let rest of restlist">
-        {{rest.id}} {{rest.name}}
+                
+        <p>
+                {{rest.id}}. {{rest.company | titlecase}}
+        </p>
+        <p>
+                {{rest.phone}}
+        </p>
+          <p>
+                {{rest.cuisine}}
+          </p>
     </li>
 </ul>

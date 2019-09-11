@@ -7,9 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
-import { BodyComponent } from './body/body.component';
 import { MenulistComponent } from './menulist/menulist.component';
 import { RestlistComponent } from './restlist/restlist.component';
+import { MenulistService } from './menulist.service'
+import { RestlistService } from './restlist.service';
+import { BooknowComponent } from './booknow/booknow.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +20,15 @@ import { RestlistComponent } from './restlist/restlist.component';
     PagenotfoundComponent,
     LandingComponent,
     NavComponent,
-    BodyComponent,
     MenulistComponent,
-    RestlistComponent
+    RestlistComponent,
+    BooknowComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MenulistService, RestlistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

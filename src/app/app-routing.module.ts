@@ -5,18 +5,18 @@ import { PagenotfoundComponent} from './pagenotfound/pagenotfound.component'
 // import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
-import { BodyComponent } from './body/body.component';
 import { MenulistComponent } from './menulist/menulist.component';
 import { RestlistComponent } from './restlist/restlist.component';
+import { BooknowComponent } from './booknow/booknow.component';
 
 const routes: Routes = [
   {path: '', component: LandingComponent },
   {path: 'home', component: HomeComponent ,
   children: [
     {path: 'nav', component: NavComponent },
-    {path: 'restlist', component: RestlistComponent },
-    {path: 'home/:id', component: MenulistComponent}
-
+    {path: ':id', component: MenulistComponent},
+    {path: 'booknow', component: BooknowComponent},
+    {path: '', component: RestlistComponent, pathMatch: 'full'}
     ]
   },
 {path : "**", component: PagenotfoundComponent}
