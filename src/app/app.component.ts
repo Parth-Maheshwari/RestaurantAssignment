@@ -11,10 +11,5 @@ export class AppComponent implements OnInit {
   title = 'khaneMeKyaHai';
   constructor (private router : Router, private route: ActivatedRoute ) { }
   // reopen = true;
-  getStarted(){
-    console.log('This route', this.route);
-    this.router.navigate(['home'], {relativeTo: this.route});
-    // document.getElementsByClassName('emptying')[0].innerHTML='';
-  }
   ngOnInit() {}
 }

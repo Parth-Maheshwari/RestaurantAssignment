@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -12,6 +11,13 @@ import { RestlistComponent } from './restlist/restlist.component';
 import { MenulistService } from './menulist.service'
 import { RestlistService } from './restlist.service';
 import { BooknowComponent } from './booknow/booknow.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule} from './material/material.module'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
+// import { HTTPModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -23,10 +29,17 @@ import { BooknowComponent } from './booknow/booknow.component';
     MenulistComponent,
     RestlistComponent,
     BooknowComponent
+    
+    
+    // HTTPModule
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [MenulistService, RestlistService],
   bootstrap: [AppComponent]

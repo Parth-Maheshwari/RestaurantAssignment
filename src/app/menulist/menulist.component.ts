@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, ParamMap} from '@angular/router';
 import { MenulistService } from '../menulist.service';
+import { RestlistService } from '../restlist.service';
 
 @Component({
   selector: 'app-menulist',
@@ -9,7 +10,13 @@ import { MenulistService } from '../menulist.service';
 })
 export class MenulistComponent implements OnInit {
   public menulist = [];
-  constructor(private router: Router, private route: ActivatedRoute, private _menulist: MenulistService) { }
+
+  constructor(private router: Router,
+              private route: ActivatedRoute,
+              private _menulist: MenulistService,
+              private _restlist: RestlistService
+              ) { }
+
   public restId;
   ngOnInit() {
 
@@ -24,7 +31,12 @@ export class MenulistComponent implements OnInit {
   }
 
   booknow(){
-    this.router.navigate(['../booknow'], {relativeTo: this.route});
+
+    console.log(this.route);
+    this._restlist.selectedrestId(this.restId);
+    this.router.navigate(['../booknow'],{relativeTo : this.route});
     // this.router.navigate(['home'], {relativeTo: this.route});
   }
+
+
 }

@@ -1,8 +1,8 @@
-<ul>
+<ul class="mat-body-1">
     <p>{{menulist[restId-1].company}}</p>
     <li *ngFor= "let dishes of menulist[restId-1].dishes">
         {{dishes}}
     </li>
 </ul>
 
-<button (click)="booknow()"> Book Now..</button>
+<button (click)="booknow()" mat-raised-button> Book Now..</button>

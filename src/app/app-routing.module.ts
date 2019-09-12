@@ -13,9 +13,11 @@ const routes: Routes = [
   {path: '', component: LandingComponent },
   {path: 'home', component: HomeComponent ,
   children: [
+    
+    {path: 'booknow', component: BooknowComponent},
     {path: 'nav', component: NavComponent },
     {path: ':id', component: MenulistComponent},
-    {path: 'booknow', component: BooknowComponent},
+    
     {path: '', component: RestlistComponent, pathMatch: 'full'}
     ]
   },

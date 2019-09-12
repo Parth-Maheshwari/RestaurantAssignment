@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenulistService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   getmenulist(){
     let menulist = [
       {
