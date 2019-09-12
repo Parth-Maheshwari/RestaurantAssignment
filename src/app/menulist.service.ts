@@ -12,25 +12,25 @@ export class MenulistService {
       {
         "_id": "1",
         "company": "RETROTEX",
-        "dishes": ["R1D1","R1D2","R1D3","R1D4","R1D5","R1D6","R1D7","R1D8","R1D9","R1D10"],
+        "dishes": ["R1 Dish 1","R1 Dish 2","R1 Dish 3","R1 Dish 4","R1 Dish 5","R1 Dish 6","R1 Dish 7","R1 Dish 8","R1 Dish 9","R1 Dish 10"],
         "cuisine": "Indian"
       },
       {
         "_id": "2",
         "company": "MOREGANIC",
-        "dishes": ["R2D1","R2D2","R2D3","R2D4","R2D5","R2D6","R2D7","R2D8","R2D9","R2D10"],
+        "dishes": ["R2 Dish 1","R2 Dish 2","R2 Dish 3","R2 Dish 4","R2 Dish 5","R2 Dish 6","R2 Dish 7","R2 Dish 8","R2 Dish 9","R2 Dish 10"],
         "cuisine": "Italian"
       },
       {
         "_id": "3",
         "company": "SIGNIDYNE",
-        "dishes": ["R3D1","R3D2","R3D3","R3D4","R3D5","R3D6","R3D7","R3D8","R3D9","R3D10"],
+        "dishes": ["R3 Dish 1","R3 Dish 2","R3 Dish 3","R3 Dish 4","R3 Dish 5","R3 Dish 6","R3 Dish 7","R3 Dish 8","R3 Dish 9","R3 Dish 10"],
         "cuisine": "Indian"
       },
       {
         "_id": "4",
         "company": "QUORDATE",
-        "dishes": ["R4D1","R4D2","R4D3","R4D4","R4D5","R4D6","R4D7","R4D8","R4D9","R4D10"],
+        "dishes": ["R4 Dish 1","R4 Dish 2","R4 Dish 3","R4 Dish 4","R4 Dish 5","R4 Dish 6","R4 Dish 7","R4 Dish 8","R4 Dish 9","R4 Dish 10"],
         "cuisine": "Lebanese"
       }
     ];

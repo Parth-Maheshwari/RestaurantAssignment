@@ -1,34 +1,37 @@
-<div> You are booking a Schedule in {{restId}} {{restName}}   </div>
-<p></p>
+<div class="mat-headline restaurant"> You are booking a schedule in {{restName}} </div>
+
 
 <form [formGroup]="bookingform" (ngSubmit)="onSubmit(bookingform)">
+    <div>
+        <mat-form-field class="formelements" floatdiv="always">
+            <input matInput formControlName="name" class="name" placeholder="Your Name">
+        </mat-form-field>
+    </div>
 
-    <label>
-        Name :
-        <input type="text" formControlName="name" class="name">
-    </label>
-<p></p>
-    <label>
-        Email :
-        <input type="text" formControlName="email" class="email">
-    </label>
-    <p></p>
-    <label>
-        No of Guests :
-        <input type="text" formControlName="guests" class="guests">
-    </label>
-    <p></p>
-    <label>
+    <div>
+        <mat-form-field class="formelements">
+            <input matInput formControlName="email" class="email" placeholder="Your Email" value="foo@bar.in">
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field class="formelements">
+            <input matInput formControlName="guests" class="guests" placeholder="No.of Gursts" value="1">
+        </mat-form-field>
+    </div>
+    <br>
+    <div>
         Date :
         <input type="date" formControlName="date" class="date">
-    </label>
-    <p></p>
-    <label>
+    </div>
+    <br>
+    <div>
         Time :
         <input type="time" formControlName="time" class="time">
-    </label>
-    <p></p>
-    
+    </div>
+    <br>
+    <div class="bookbutton">
+        <button mat-raised-button type="submit">Book</button>
+    </div>
 
-<button mat-raised-button type="submit">Book</button>
 </form>

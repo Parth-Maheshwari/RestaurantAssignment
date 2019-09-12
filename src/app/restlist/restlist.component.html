@@ -1,4 +1,4 @@
-<ul class="mat-body-1">
+<!-- <ul class="mat-body-1">
     <li (click)="selectingRest(rest)" *ngFor="let rest of restlist">
                 
         <p>
@@ -7,8 +7,18 @@
         <p>
                 {{rest.phone}}
         </p>
-          <p>
+        <p>
                 {{rest.cuisine}}
-          </p>
+        </p>
     </li>
-</ul>
+</ul> -->
+
+<mat-grid-list cols="2" rowHeight="4:1" gutterSize:20px>
+                <mat-grid-tile (click)="selectingRest(rest)" *ngFor="let rest of restlist">
+                <span style="padding-left:20px"> {{rest.company | uppercase}} 
+                        <p> Contact No: {{rest.phone}}</p>
+                        <p> Address: {{rest.address}}</p>
+                        <p> Speciality: {{rest.cuisine}}</p>
+                </span>
+                </mat-grid-tile>
+</mat-grid-list>

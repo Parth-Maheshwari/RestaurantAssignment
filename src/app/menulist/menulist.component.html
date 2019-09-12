@@ -1,8 +1,16 @@
-<ul class="mat-body-1">
+<!-- <ul class="mat-body-1">
     <p>{{menulist[restId-1].company}}</p>
     <li *ngFor= "let dishes of menulist[restId-1].dishes">
         {{dishes}}
     </li>
-</ul>
+</ul> -->
 
-<button (click)="booknow()" mat-raised-button> Book Now..</button>
+<mat-grid-list cols="4" rowHeight="3:1" gutterSize:200px>
+        <mat-grid-tile *ngFor="let dishes of menulist[restId-1].dishes" >
+        <span> {{dishes}}
+        </span>
+        </mat-grid-tile>
+</mat-grid-list>
+<div>
+        <button (click)="booknow()" mat-raised-button> Book Now..</button>
+</div>

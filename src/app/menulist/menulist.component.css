@@ -1,0 +1,17 @@
+mat-grid-tile {
+    background: lightyellow;
+  }
+  mat-grid-tile :hover {
+    font-size: 17px;
+  }
+div{
+text-align: center;
+
+}
+button{
+  font-size: 18px;
+}
+  button:hover{
+    color: #aaa;
+    box-shadow: 10px 10px 10px grey;
+    }

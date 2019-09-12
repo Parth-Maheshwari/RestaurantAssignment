@@ -1,9 +1,35 @@
+form div {
+    width: 100%;
+    display: block;
+    margin-left: 20%;
+}
+
+.restaurant {
+    text-align: center;
+}
+
+input {
+    width: 40%;
+}
+
+div.bookbutton {
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+}
+
+button:hover {
+    color: #aaa;
+    box-shadow: 10px 10px 10px grey;
+}
+
 form {
     max-width: 500px;
     width: 100%;
 }
 
-
-input {
-    width: 50%;
+.formelements {
+    width: 100%;
 }
